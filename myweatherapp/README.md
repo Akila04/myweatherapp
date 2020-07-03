@@ -1,3 +1,35 @@
+Procedure to install node.js:
+	step 1: $ sudo apt update
+	step 2: $ sudo apt install nodejs
+	step 3: $ sudo apt install npm
+
+To check which version of Node.js you have installed after these initial steps, type:
+	command : $ nodejs -v
+
+Procedure to run the project:
+
+	Step 1:sign up over at openweathermap.org to get an API key.
+	
+	Step 2:Steps to get a GoogleMapApi key:
+		link:"https://developers.google.com/maps/documentation/geocoding/get-api-key"
+
+	Step 3:Fork the project and clone it locally.
+
+	Step 4:Install the following packages under src/components folder.
+		1.Command To Install fortawesome:
+			npm -i save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+		2.Command to install axios:
+			npm install axios
+		3.Command to install bootstrap:
+			npm install --save bootstrap
+		4.Command to install weather-icons:
+			npm install weather-icons-react --save
+
+	Step 5: Run the project using the command npm start
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
