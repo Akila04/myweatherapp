@@ -1,6 +1,9 @@
 Procedure to install node.js:
+	
 	step 1: $ sudo apt update
+	
 	step 2: $ sudo apt install nodejs
+	
 	step 3: $ sudo apt install npm
 
 To check which version of Node.js you have installed after these initial steps, type:
