@@ -75,21 +75,24 @@ class Weather_component extends Component{
 			this.setState({error:''});
 			return;
 		}
-		const Apikey=YOUR_OPENWEATHERMAP.ORG API KEY;
+		const Apikey="44f2e0222cafae724c2b6a53cacee4b3";
 		axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + Apikey)
 			.then(response => {this.setweather(response)})
 			.catch(error =>{this.seterror(city)})
 	}
 	
-	componentDidMount() {
+	/*componentDidMount() {
 		const google = window.google;
 		const ele=this.autocompleteInput.current;
 		this.autocomplete = new google.maps.places.Autocomplete(ele,{types: ['geocode']});
 		this.autocomplete.addListener('place_changed', this.handlePlaceChanged);
-	 }
+	 }*/
 	handlePlaceChanged(){
-		const place = this.autocomplete.getPlace();
-		this.getweather(place.name);
+		//console.log(document.getElementById('cityname').value);
+		//const place = this.autocomplete.getPlace();
+		//this.getweather(place.name);
+		const cityname=document.getElementById('cityname').value;
+		this.getweather(cityname);
 	}
 		
 	 	
@@ -97,15 +100,14 @@ class Weather_component extends Component{
 	render(){		
 	return(	
 		<div>
-		    <Button />
 		    <div className="header">
 			<WiNightAltCloudyGusts size={70}   />
 			 &nbsp;&nbsp;Weather App	
 		    </div>
 		    <div className="inputcontainer" name="inputdivision">
 			<i className="glyphicon glyphicon-search searchicon icon"></i>
-			<input className="inputfield" 
-				ref={this.autocompleteInput} type='text' id="autocomplete" placeholder="Enter City" />
+			<input className="inputfield" onChange={this.handlePlaceChanged}
+				 type='text' id="cityname" placeholder="Enter City" />
 		    </div>
 		    <div className="weathercontent">
 			{this.state.error}
@@ -128,3 +130,13 @@ class Weather_component extends Component{
 	}	
 }
 export default Weather_component;
+
+/*
+<input className="inputfield" 
+				ref={this.autocompleteInput} type='text' id="autocomplete" placeholder="Enter City" />
+ */
+
+
+
+
+

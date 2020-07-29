@@ -1,8 +1,8 @@
 .weathercontent{
 	text-align:center;
-	margin-left :5px;
+	margin-left :40px;
 	font-size:20px;
-	
+	margin-right:-100px;	
 }
 
 .center{
@@ -50,6 +50,7 @@
 	border-radius:0px 50px 50px 0px;
 	border:2px solid white;
 	color:grey;
+	margin-top:30px;
 
 }
 
@@ -59,7 +60,7 @@
 
 .header{
 	text-align:left;
-	margin-top:5px;
+	margin-top:45px;
 	margin-left:20px;
 	margin-bottom:25px;
 	color:white;
@@ -68,24 +69,25 @@
 
 .weathericons{
 	font-size:60px;
-	margin-top:50px;
-	margin-left:15px;
+	margin-top:60px;
+	margin-left:50px;
 	color:white;
 	text-align:left;
 }
 
 .date{
 	text-align:left;
-	margin-left:40px;
+	margin-left:80px;
 	color:#A9A9A9;	
 	font-weight:1px;
 	font-family: "Lucida Console", Courier, monospace;	
 }
 
 .place{
+	margin-top:40px;
 	font-weight:5px;
 	text-align:left;
-	margin-left:40px;
+	margin-left:80px;
 	color:white;
 }
 
@@ -108,13 +110,13 @@
 
 .error{
 	text-align:center;
-	margin-left:350px;
+	margin-left:200px;
 	color:white;
 	font-size:25px;
 }
 
 .sun{
-	margin-left:135px;
+	margin-left:150px;
 	margin-bottom:70px;
 	font-size:30px;
 	color:white;

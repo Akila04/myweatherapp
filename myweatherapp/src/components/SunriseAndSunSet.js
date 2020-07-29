@@ -23,7 +23,7 @@ class SunriseAndSunSet extends Component{
 			return(
 				<div>
 				<div className="sun">Sunrise <WiSunrise size={50} /><p>{sunrisetime}</p></div>
-				<div className="sun">Sunrise <WiSunrise size={50} /><p>{sunsettime}</p></div>
+				<div className="sun">Sunset <WiSunrise size={50} /><p>{sunsettime}</p></div>
 	
 				</div>
 			);

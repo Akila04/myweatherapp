@@ -17,7 +17,7 @@ class WindAndHumidity extends Component{
 
 	gethumidity = (humidity) =>{
 		if(humidity != ''){
-			return <div className="humidity"> Wind <WiHumidity size={50} /><p>{humidity} mph</p></div>
+			return <div className="humidity"> Humidity <WiHumidity size={50} /><p>{humidity} mph</p></div>
 		}
 		else{
 			return <div></div>
