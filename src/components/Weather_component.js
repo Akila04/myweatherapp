@@ -102,7 +102,7 @@ class Weather_component extends Component{
 		<div>
 		    <div className="header">
 			<WiNightAltCloudyGusts size={70}   />
-			 &nbsp;&nbsp;WEATHER APP	
+			 &nbsp;&nbsp;Weather App	
 		    </div>
 		    <div className="inputcontainer" name="inputdivision">
 			<i className="glyphicon glyphicon-search searchicon icon"></i>
