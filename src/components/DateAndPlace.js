@@ -5,7 +5,7 @@ class DateAndPlace extends Component{
 	getdate = (date) =>{
 
 		if(date != ''){
-			const timezone1=new Date(parseInt('1593632497') * 1000).toString();
+			const timezone1=new Date(parseInt(date) * 1000).toString();
 			const date=timezone1.substring(0,16);
 			return <p className="date">{date}</p>
 		}
