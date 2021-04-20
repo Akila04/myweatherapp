@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from './Button'
+//import Button from './Button'
 import Icon from './Icon'
 import SunriseAndSunSet from './SunriseAndSunSet'
 import WindAndHumidity from './WindAndHumidity'
